@@ -1,7 +1,7 @@
 <div class="container">
-  <div class="row justify-content-center">
+  <div class="column justify-content-center">
     <div class="col-sm">
-      <h3>Draw Here</h3>
+      <h3>Draw a number here </h3>
         <div class="wrapper">
             <canvas drawable (newImage)="predict($event)"></canvas><br>
         </div>
@@ -9,16 +9,14 @@
         <button class="btn btn-sm btn-warning" (click)="canvas.clear()">Erase</button>
 
     </div>
-    <div class="col-sm">
+    <div class="col-sm predict">
         <h3>TensorFlow Prediction</h3>
         <chart [data]="predictions"></chart>
     </div>
   </div>
 </div>
 
-<hr>
-
-<div class="container">
+<!--<div class="container">
     <div class="row justify-content-center">
       <div class="col-sm">
         <h1>Linear Model</h1>
@@ -32,7 +30,7 @@
           <input type="number" (change)="linearPrediction($event.target.value)" class="form-control" placeholder="enter any random numbner">
       </div>
     </div>
-  </div>
+  </div>-->
   
 
 

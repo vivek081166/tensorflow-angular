@@ -12,7 +12,7 @@ export class ChartComponent implements OnChanges {
   barChartOptions = {
     scaleShowVerticalLines: false,
     responsive: true,
-    backgroundColor: '#ef6c00',
+    backgroundColor: '#5191f2',
     scales: {
       xAxes: [
         {
@@ -49,7 +49,7 @@ export class ChartComponent implements OnChanges {
       {
         data: this.data || [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         label: 'Predictions',
-        backgroundColor: '#ef6c00',
+        backgroundColor: '#5191f2',
       }];
   }
 

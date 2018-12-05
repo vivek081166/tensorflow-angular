@@ -2,6 +2,7 @@ import { Component, ViewChild, OnInit } from '@angular/core';
 import { DrawableDirective } from './drawable.directive';
 
 import * as tf from '@tensorflow/tfjs';
+import {ignore} from 'selenium-webdriver/testing';
 
 @Component({
   selector: 'app-root',
@@ -39,12 +40,14 @@ export class AppComponent implements OnInit {
 
 
     // Train
+    // @ts-ignore
     await this.linearModel.fit(xs, ys)
 
     console.log('model trained!')
   }
 
   linearPrediction(val) {
+    // @ts-ignore
     const output = this.linearModel.predict(tf.tensor2d([val], [1, 1])) as any;
     this.prediction = Array.from(output.dataSync())[0]
   }
@@ -63,6 +66,7 @@ export class AppComponent implements OnInit {
 
       // Convert the canvas pixels to 
       let img = tf.fromPixels(imageData, 1);
+      // @ts-ignore
       img = img.reshape([1, 28, 28, 1]);
       img = tf.cast(img, 'float32');
 
