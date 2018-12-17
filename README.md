@@ -1,6 +1,7 @@
 # Tensorflow.js Angular Demo
 
-Watch the [screencast](https://angularfirebase.com/lessons)
+Live Demo
+https://vivek081166.github.io/tensorflow-angular/
 
 This demo imports an MNIST ConvNet trained in Keras Python, then makes predictions with TensorFlow.js
 

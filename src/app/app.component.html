@@ -1,7 +1,7 @@
 <div class="container">
   <div class="column justify-content-center">
     <div class="col-sm">
-      <h3>Draw a number here </h3>
+      <h5>Draw a number here </h5>
         <div class="wrapper">
             <canvas drawable (newImage)="predict($event)"></canvas><br>
         </div>
@@ -10,7 +10,7 @@
 
     </div>
     <div class="col-sm predict">
-        <h3>TensorFlow Prediction</h3>
+        <h5>TensorFlow Prediction</h5>
         <chart [data]="predictions"></chart>
     </div>
   </div>
